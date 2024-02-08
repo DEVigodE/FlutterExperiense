@@ -20,8 +20,8 @@ class AttendantDeskAssignmentRepositoryImpl implements AttendantDeskAssignmentRe
         await restClient.auth.post(
           '/attendantDeskAssignment',
           data: {
-            'userId': '#userAuthRef', //! pq nao tem backend, userId tem no token JWT
-            'deskNumber': deskNumber,
+            'user_id': '#userAuthRef', //! pq nao tem backend, userId tem no token JWT
+            'desk_number': deskNumber,
             'date_created': DateTime.now().toIso8601String(), //!!! pq nao tem backend
             'status': 'Available', //!!! pq nao tem backend
           },
