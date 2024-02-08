@@ -1,0 +1,88 @@
+{
+	"folders": [
+		{
+			"path": "C:/Users/morei/OneDrive/CURSOS/FlutterExperiense"
+		}
+	],
+	"settings": {
+		"enableTelemetry": true,
+		"editor.fontFamily": "FiraCode Nerd Font",
+		"editor.fontWeight": "450",
+		"terminal.integrated.fontFamily": "FiraCode Nerd Font",
+		"terminal.integrated.fontSize": 13,
+		"terminal.integrated.fontWeight": "500",
+		"editor.fontLigatures": true,
+		"editor.codeActionsOnSave": {
+			"source.fixAll": "explicit",
+			"source.organizeImports": "explicit"
+		},
+		"workbench.colorTheme": "Dracula Pro (Blade)",
+		"workbench.iconTheme": "material-icon-theme",
+		"debug.toolBarLocation": "commandCenter",
+		"dart.lineLength": 150,
+		"dart.flutterHotReloadOnSave": "all",
+		"dart.flutterCreateOrganization": "br.com.undersea",
+		"[dart]": {
+			"editor.formatOnSave": true,
+			"editor.formatOnType": true,
+			"editor.rulers": [
+				150
+			],
+			"editor.selectionHighlight": false,
+			//"editor.suggestSelection": "first",
+			//"editor.suggest.snippetsPreventQuickSuggestions": false,
+			//"editor.tabCompletion": "onlySnippets",
+			//"editor.wordBasedSuggestions": "off"
+		},
+		"files.exclude": {
+			"**/*controller.g.dart": true,
+		},
+		"editor.bracketPairColorization.enabled": true,
+		"editor.guides.bracketPairs": "active",
+		"editor.lineHeight": 0,
+		//"editor.snippetSuggestions": "bottom",
+		//"editor.quickSuggestionsDelay": 10,
+		"generate.template.type": "Clean Code",
+	},
+	"extensions": {
+		"recommendations": [
+			"rodrigorahman.flutter-dart-utils",
+			"dart-code.flutter",
+			"nash.awesome-flutter-snippets",
+			"pkief.material-icon-theme",
+			"adpyke.codesnap",
+			"bruce.comments-wiper",
+			"ricardo-emerson.dart-data-class-tools",
+			"usernamehw.errorlens",
+			"donjayamanne.githistory",
+			"github.copilot-chat",
+			"github.vscode-pull-request-github",
+			"kisstkondoros.vscode-gutter-preview",
+			"oderwat.indent-rainbow",
+			"aykutsarac.jsoncrack-vscode",
+			"ms-vsliveshare.vsliveshare",
+			"postman.postman-for-vscode",
+			"mohsen1.prettify-json",
+			"shardulm94.trailing-spaces",
+			"pflannery.vscode-versionlens",
+			"aaron-bond.better-comments",
+			"dart-code.dart-code",
+			"github.copilot"
+		]
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "lab_clinic_self_service DEV",
+				"cwd": "lab_clinic_self_service",
+				"request": "launch",
+				"type": "dart",
+				"args": [
+					"--dart-define-from-file",
+					".config/env.json"
+				]
+			},
+		]
+	}
+}
