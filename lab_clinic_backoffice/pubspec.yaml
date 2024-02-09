@@ -9,18 +9,21 @@ dependencies:
     sdk: flutter
   lab_clinicas_core:
     path: ../lab_clinicas_core
-  cupertino_icons: ^1.0.2
+  cupertino_icons: ^1.0.6
   flutter_getit: ^2.0.0
   dio: ^5.4.0
   shared_preferences: ^2.2.2
   signals_flutter: ^3.0.0
   asyncstate: ^2.1.1-dev.1
   validatorless: ^1.2.3
+  json_annotation: ^4.8.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^2.0.0
+  flutter_lints: ^3.0.1
+  build_runner: ^2.4.8
+  json_serializable: ^6.7.1
 
 flutter:
   uses-material-design: true 

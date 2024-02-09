@@ -17,7 +17,7 @@
 			"source.fixAll": "explicit",
 			"source.organizeImports": "explicit"
 		},
-		"workbench.colorTheme": "Dracula Pro (Lincoln)",
+		"workbench.colorTheme": "Dracula Pro (Van Helsing)",
 		"workbench.iconTheme": "material-icon-theme",
 		"debug.toolBarLocation": "commandCenter",
 		"dart.lineLength": 150,
