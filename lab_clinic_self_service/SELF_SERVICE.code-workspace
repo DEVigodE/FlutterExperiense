@@ -22,6 +22,9 @@
 		"dart.lineLength": 150,
 		"dart.flutterHotReloadOnSave": "all",
 		"dart.flutterCreateOrganization": "br.com.undersea",
+		"dart.devToolsLocation": {
+			"default": "external"
+		},
 		"[dart]": {
 			"editor.formatOnSave": true,
 			"editor.formatOnType": true,

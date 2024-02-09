@@ -29,6 +29,7 @@ final class Messages {
 mixin MessageStateMixin {
   final Signal<String?> _errorMessage = signal(null);
   String? get errorMessage => _errorMessage();
+
   final Signal<String?> _infoMessage = signal(null);
   String? get infoMessage => _infoMessage();
 

@@ -23,7 +23,7 @@ class PatientModel {
   PatientAddessModel address;
   @JsonKey(defaultValue: '')
   String guardian;
-  @JsonKey(name: 'guardian_identigication_number')
+  @JsonKey(name: 'guardian_identification_number', defaultValue: '')
   String guardianIdentigicationNumber;
 
   factory PatientModel.fromJson(Map<String, dynamic> json) => _$PatientModelFromJson(json);

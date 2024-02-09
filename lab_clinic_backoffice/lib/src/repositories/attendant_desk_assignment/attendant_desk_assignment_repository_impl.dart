@@ -67,7 +67,7 @@ class AttendantDeskAssignmentRepositoryImpl implements AttendantDeskAssignmentRe
     try {
       final Response(data: List(first: data)) = await restClient.auth.get(
         '/attendantDeskAssignment',
-        queryParameters: {'userId': '#userAuthRef'}, //! queryParameters pq nao tem backend pois o userId tem no token JWT
+        queryParameters: {'user_id': '#userAuthRef'}, //! queryParameters pq nao tem backend pois o userId tem no token JWT
       );
       return Right(data['desk_number']);
     } on DioException catch (e, s) {

@@ -6,6 +6,7 @@ import 'package:flutter_getit/flutter_getit.dart';
 import 'package:lab_clinic_backoffice/src/bindings/lab_clinic_application_bindings.dart';
 import 'package:lab_clinic_backoffice/src/pages/home/home_router.dart';
 import 'package:lab_clinic_backoffice/src/pages/login/login_router.dart';
+import 'package:lab_clinic_backoffice/src/pages/pre_checkin/pre_checkin_router.dart';
 import 'package:lab_clinic_backoffice/src/pages/splash/splash_page.dart';
 import 'package:lab_clinicas_core/lab_clinicas_core.dart';
 
@@ -30,7 +31,7 @@ class LabClinicBackoffice extends StatelessWidget {
       pagesBuilders: [
         FlutterGetItPageBuilder(page: (_) => const SplashPage(), path: '/'),
       ],
-      pages: const [LoginRouter(), HomeRouter()],
+      pages: const [LoginRouter(), HomeRouter(), PreCheckinRouter()],
     );
   }
 }

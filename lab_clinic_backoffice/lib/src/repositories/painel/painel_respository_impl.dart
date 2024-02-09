@@ -12,7 +12,7 @@ class PainelRespositoryImpl implements PainelRespository {
   Future<Either<RepositoryException, String>> callOnPanel(String password, int attendantDesk) async {
     try {
       final Response(data: {'id': id}) = await restClient.auth.post(
-        '/painelCheckIn',
+        '/painelCheckin',
         data: {
           'password': password,
           'time_called': DateTime.now().toIso8601String(),
