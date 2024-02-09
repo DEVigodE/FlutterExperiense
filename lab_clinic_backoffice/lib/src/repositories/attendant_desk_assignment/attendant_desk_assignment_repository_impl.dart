@@ -61,6 +61,20 @@ class AttendantDeskAssignmentRepositoryImpl implements AttendantDeskAssignmentRe
     }
     return null;
   }
+
+  @override
+  Future<Either<RepositoryException, int>> getDeskAssingment() async {
+    try {
+      final Response(data: List(first: data)) = await restClient.auth.get(
+        '/attendantDeskAssignment',
+        queryParameters: {'userId': '#userAuthRef'}, //! queryParameters pq nao tem backend pois o userId tem no token JWT
+      );
+      return Right(data['desk_number']);
+    } on DioException catch (e, s) {
+      log('Erro ao buscar mesa do atendente', error: e, stackTrace: s);
+      return Left(RepositoryException());
+    }
+  }
 }
 
 //! EXEMPLO DE DESTRUCTION
