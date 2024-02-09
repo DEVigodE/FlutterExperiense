@@ -3,7 +3,6 @@
 		{
 			"path": "C:/Users/morei/OneDrive/CURSOS/FlutterExperiense/lab_clinic_backoffice"
 		},
-		
 	],
 	"settings": {
 		"enableTelemetry": true,
@@ -23,6 +22,9 @@
 		"dart.lineLength": 150,
 		"dart.flutterHotReloadOnSave": "all",
 		"dart.flutterCreateOrganization": "br.com.undersea",
+		"dart.devToolsLocation": {
+			"default": "external"
+		},
 		"[dart]": {
 			"editor.formatOnSave": true,
 			"editor.formatOnType": true,
@@ -69,21 +71,6 @@
 			"aaron-bond.better-comments",
 			"dart-code.dart-code",
 			"github.copilot"
-		]
-	},
-	"launch": {
-		"version": "0.2.0",
-		"configurations": [
-			{
-				"name": "lab_clinic_self_service DEV",
-				"cwd": "lab_clinic_self_service",
-				"request": "launch",
-				"type": "dart",
-				"args": [
-					"--dart-define-from-file",
-					".config/env.json"
-				]
-			},
 		]
 	}
 }
