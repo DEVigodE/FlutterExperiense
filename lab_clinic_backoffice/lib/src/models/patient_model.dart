@@ -8,6 +8,7 @@ class PatientModel {
   PatientModel({
     required this.id,
     required this.name,
+    required this.email,
     required this.phoneNumber,
     required this.document,
     required this.address,
@@ -17,6 +18,7 @@ class PatientModel {
 
   String id;
   String name;
+  String email;
   @JsonKey(name: 'phone_number')
   String phoneNumber;
   String document;
