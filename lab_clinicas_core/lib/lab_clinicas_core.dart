@@ -9,7 +9,7 @@ export 'src/fp/nil.dart';
 export 'src/fp/unit.dart';
 export 'src/helpers/messages.dart';
 export 'src/lab_clinicas_core_config.dart';
-export 'src/restClient/rest_client.dart';
+export 'src/restClient/rest_client.dart' if (dart.library.html) 'src/restClient/rest_client_web.dart';
 export 'src/theme/lab_clinic_theme.dart';
 export 'src/widgets/icon_popup_menu_widget.dart';
 export 'src/widgets/lab_clinic_app_bar.dart';

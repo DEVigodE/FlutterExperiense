@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_getit/flutter_getit.dart';
-import 'package:lab_clinic_panel/src/login/login_controller.dart';
-import 'package:lab_clinic_panel/src/login/login_page.dart';
+import 'package:lab_clinic_panel/src/pages/login/login_controller.dart';
+import 'package:lab_clinic_panel/src/pages/login/login_page.dart';
 import 'package:lab_clinic_panel/src/repositories/user/user_repository.dart';
 import 'package:lab_clinic_panel/src/repositories/user/user_repository_impl.dart';
 import 'package:lab_clinic_panel/src/services/login/user_login_service.dart';
