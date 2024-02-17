@@ -21,12 +21,22 @@ class _CheckinPageState extends State<CheckinPage> with MessageViewMixin {
   @override
   void initState() {
     messageListener(controller);
+    effect(() {
+      if (controller.endProcess.value) {
+        Navigator.of(context).pushReplacementNamed('/end-checkin');
+      }
+    });
     super.initState();
   }
 
   @override
   Widget build(BuildContext context) {
-    final PatientInformationFormModel(:password, :patient) = controller.informationForm.watch(context)!;
+    final PatientInformationFormModel(
+      :password,
+      :patient,
+      :medicalOrders,
+      :healthInsuranceCard,
+    ) = controller.informationForm.watch(context)!;
 
     return Scaffold(
       appBar: LabClinicAppBar(),
@@ -118,15 +128,14 @@ class _CheckinPageState extends State<CheckinPage> with MessageViewMixin {
                   ),
                 ),
                 const Gap(24),
-                const Row(
+                Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-                    CheckinImageLink(label: 'Carteirinha'),
+                    CheckinImageLink(label: 'Carteirinha', image: healthInsuranceCard),
                     Column(
                       children: [
-                        CheckinImageLink(label: 'Padido Medico 1'),
-                        CheckinImageLink(label: 'Padido Medico 2'),
-                        CheckinImageLink(label: 'Padido Medico 3'),
+                        for (final (index, medicalOrder) in medicalOrders.indexed)
+                          CheckinImageLink(label: 'Padido Medico ${index + 1}', image: medicalOrder),
                       ],
                     ),
                   ],
@@ -138,7 +147,7 @@ class _CheckinPageState extends State<CheckinPage> with MessageViewMixin {
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(fixedSize: const Size.fromHeight(48)),
                     onPressed: () {
-                      Navigator.of(context).pushReplacementNamed('/checkin', arguments: controller.informationForm);
+                      controller.endCheckin();
                     },
                     child: const Text('FINALIZAR ATENDIMENTO'),
                   ),
