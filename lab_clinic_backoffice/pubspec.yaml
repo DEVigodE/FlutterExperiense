@@ -17,6 +17,7 @@ dependencies:
   asyncstate: ^2.1.1-dev.1
   validatorless: ^1.2.3
   json_annotation: ^4.8.1
+  gap: ^3.0.1
 
 dev_dependencies:
   flutter_test:
